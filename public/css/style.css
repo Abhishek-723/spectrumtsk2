@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+}
+body{
+    background-color: #05ffb057;
+    overflow: hidden;
+}
+.imag{
+    width: 100px;
+    height: 100px;
+    background: url(spectrum\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    font-size: 1.3rem;
+}
+.header .logo>img{
+    height: 100px;
+}
+.header .button{
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;  
+    border-radius: 15px;  
+    background-color: black;
+    color: whitesmoke;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.button .login{
+    background-color: #05ff82;
+    color: #000;
+}
+.body{
+    margin-top: 100px;
+    display: flex;
+    /* width: 100%; */
+    height: 75vh;
+}
+.body .content{
+    padding: 10px;
+    font-size: 3rem;
+    width: 50%;
+}
+.body span{
+    font-family: 'Titillium Web', sans-serif;
+}
+.body .image{
+    width: 50%;
+    /* height: 60%; */
+    background: url(Telecommuting-pana.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px ;
+    /* position: relative; */
+}
+.body .image>img{
+    position: relative;
+    top: -20vh;
+    width: 100%;
+}

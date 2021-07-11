@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.3s all ease;
+            font-family: 'Poppins', sans-serif;
+        }
+body{
+           font-family: 'Poppins', sans-serif;
+    background-color: #05ffb057;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+}
+.imag{
+    width: 100px;
+    height: 100px;
+    background: url(/css/spectrum\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    font-size: 1.3rem;
+}
+.header .logo>img{
+    height: 100px;
+}
+.header .button{
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.button button{
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;  
+    border-radius: 15px;  
+    background-color: black;
+    color: whitesmoke;
+}
+.button button:hover{
+    transform: scale(1.1);
+}
+.button .login{
+    background-color: #05ff82;
+    color: #000;
+}
+.register{
+    /* margin-left: 300px; */
+    border-radius: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    height: 700px;
+    width: 600px;
+    background-color: #fff;
+}
+.register .title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+.register form{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.register form label{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.register form input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #000;
+}
+.register form input:focus{
+    outline: none;
+}
+.register form select{
+    width: 400px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #000;
+}
+.register form select:focus{
+    outline: none;
+}
+.register form button{
+    margin-top: 10px;
+    margin-left: 80px;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(51, 105, 185);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="imag"></div>
+            <h2>Spectrum</h2>
+        </div>
+        <div class="button">
+            <a href="/login"><button class="login">Login</button></a>
+           <a href="/register"><button class="Register">Sign Up</button></a>
+        </div>
+    </div>
+    <div class="register">
+        <div class="title">Sign Up</div>
+        <form action="/registration" method="POST">
+            <div class="name">
+                <label for="name">Name</label><br>
+                <input type="text" placeholder="Enter your name" name="name" id="name" required>
+            </div>
+            <div class="branch">
+                <label for="branch">Branch</label><br>
+                <select name="branch" id="branch">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="1">Architechture</option>
+                    <option value="2">Bio-technology</option>
+                    <option value="3">Civil Engineering</option>
+                    <option value="4">Computer Science and Engineering</option>
+                    <option value="5">Mechanical Engineering</option>
+                    <option value="6">Textile Engineering</option>
+                    <option value="7">Electrical Engineering</option>
+                    <option value="8">Fashion and Apparel Technology</option>
+                    <option value="9">Information Technology</option>
+                    <option value="10">Planning</option>
+                    <option value="11">Mathematics and Humanities</option>
+                    <option value="12">Physics</option>
+                    <option value="13">Chemistry</option>
+                    <option value="14">Instrumentation and Electronics Engineering</option>
+                    <option value="15">Civil Engineering</option>
+
+                  </select>
+            </div>
+            <div class="email">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="Enter your Email" name="email" id="email" required>
+            </div>
+            <div class="domain">
+                <label for="domain">Domain</label><br>
+                <select name="domain" id="Domain">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="1">Hardware</option>
+                    <option value="2">Software</option>
+                    <option value="3">Design</option>
+                </select>
+            </div>
+            <div class="pwd">
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Enter your Password" name="password" id="password" required>
+            </div>
+            <div class="cpwd">
+                <label for="confirmpassword">Confirm Password</label><br>
+                <input type="password" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword" required>
+            </div>
+            <button type="post" class="registerbtn">SIGN-UP</button>
+            <div class="foot">Already have an account?  <a href="/login">Log In</a></div>
+        </form>
+    </div>
+ </body>
+</html>

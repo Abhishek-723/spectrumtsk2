@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.3s all ease;
+            font-family: 'Poppins', sans-serif;
+        }
+    .imag{
+    width: 100px;
+    height: 100px;
+    background: url(/css/spectrum\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    font-size: 1.3rem;
+}
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+    .content{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .phrase{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 100px;
+        letter-spacing: 2px;
+        padding: 20px;
+    }
+    .button button{
+        margin-right: 10px;
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;  
+    border-radius: 15px;  
+    background-color: black;
+    color: whitesmoke;
+}
+.button button:hover{
+    transform: scale(1.1);
+}
+    
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="imag"></div>
+            <h2>Spectrum</h2>
+        </div>
+        <div class="button">
+            <a href="/"><button class="logout">Logout</button></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="phrase">
+            <h1>Hi User</h1>
+            <p>
+               Congratulations you have succesfully logged in to our website
+            </p>
+            <p>Click <a href="https://abhishek-723.github.io/spectrum/">Here</a> to check the website</p>
+            <!-- <a href=""></a><button>Learn More</button></a> -->
+        </div>
+    </div>
+</body>
+</html>

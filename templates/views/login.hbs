@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+*{
+    transition: 0.3s all ease;
+}
+        body{
+            font-family: 'Poppins', sans-serif;
+    background-color: #05ffb057;
+    overflow: hidden;
+}
+.imag{
+    width: 100px;
+    height: 100px;
+    background: url(/css/spectrum\ logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    font-size: 1.3rem;
+}
+.header .logo>img{
+    height: 100px;
+}
+.header .button{
+    margin-right: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.button button{
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;  
+    border-radius: 15px;  
+    background-color: black;
+    color: whitesmoke;
+}
+.button button:hover{
+    transform: scale(1.1);
+}
+.button .login{
+    background-color: #05ff82;
+    color: #000;
+}
+.login-box{
+    border-radius: 20px;
+    height: 500px;
+    width: 700px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding: 8px;
+}
+.login-box .title{
+   letter-spacing: 2px;
+   font-size: 1.5rem;
+}
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.login-box form  .email{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    width: 480px;
+}
+.login-box form  .email input{
+    border-radius: 30px;
+    border: 2px solid #000;
+    margin-left: 20px;
+    width: 400px;
+    /* height: 40px; */
+    padding: 10px 20px;
+}
+.login-box form  .email input:focus{
+    outline: none;
+}
+.login-box form  .pwd{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    width: 480px;
+}
+.login-box form  .pwd input{
+    border-radius: 30px;
+    border: 2px solid #000;
+    margin-left: 20px;
+    width: 400px;
+    padding: 10px 20px;
+}
+.login-box form  .pwd input:focus{
+    outline: none;
+}
+form button{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(51, 105, 185);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+    
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="imag"></div>
+            <h2>Spectrum</h2>
+        </div>
+        <div class="button">
+            <a href="/login"><button class="login">Login</button></a>
+           <a href="/registration"><button class="Register">Sign Up</button></a>
+        </div>
+    </div>
+    <div class="login-box">
+        <div class="title"><h2>Login</h2></div>
+        <form action="/dashboard" method="POST">
+            <div class="email">
+                <label for="email"><b><i class="fas fa-envelope"></i></b></label>
+                <input type="text" placeholder="Enter your email" name="email" id="email" required>
+            </div>
+            <div class="pwd">
+                <label for="password"><i class="fas fa-unlock"></i></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            </div>
+            <button type="post" class="loginbtn">LOGIN</button>
+            <div class="foot">Don't have an account?  <a href="/registration">Sign Up</a></div>
+        </form>
+    </div>
+</body>
+</html>
